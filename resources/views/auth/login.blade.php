@@ -1,3 +1,5 @@
+<x-header />
+
 <x-guest-layout>
 
 <div class="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-blue-300 to-indigo-500">

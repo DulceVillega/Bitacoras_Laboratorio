@@ -15,82 +15,120 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gray-100 text-gray-800 flex flex-col items-center min-h-screen p-6">
-
+<body class="bg-gradient-to-br from-gray-100 to-blue-100 text-gray-800 flex flex-col items-center min-h-screen p-6">
     <!-- HEADER -->
-    <header class="w-full max-w-4xl flex justify-end mb-6">
+    <header class="w-full bg-gradient-to-r from-blue-700 to-indigo-800 shadow-lg">
 
-        
-    </header>
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="flex justify-between items-center h-16">
+
+            <!-- Logo + nombre -->
+            <div class="flex items-center gap-3">
+
+                <div class="bg-white text-blue-700 p-2 rounded-lg shadow">
+                    
+                </div>
+
+                <div class="text-white">
+
+                    <h1 class="font-bold text-lg leading-none">
+                        Sistema de Bitácoras
+                    </h1>
+
+                    <p class="text-xs text-blue-200">
+                        Laboratorio de Cómputo
+                    </p>
+
+                </div>
+
+            </div>
+
+            
+        </div>
+
+    </div>
+
+</header>
 
     <!-- HERO -->
-    <main class="text-center max-w-3xl">
+    <main class="text-center max-w-4xl mx-auto mt-16">
 
-        <h1 class="text-4xl font-bold mb-4">
-            Sistema de Bitácoras
+    <div class="bg-white p-12 rounded-2xl shadow-xl">
+
+        <h1 class="text-5xl font-bold mb-6 text-gray-800">
+            Sistema de Bitácoras de Laboratorio
         </h1>
 
-        <p class="text-gray-600 mb-8">
-            Plataforma para registrar y gestionar las actividades del laboratorio de cómputo.
-            Permite administrar usuarios, registrar incidencias y consultar reportes.
+        <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+            Plataforma institucional para registrar, controlar y administrar
+            las actividades realizadas en el laboratorio de cómputo.
+            Permite gestionar usuarios, registrar incidencias
+            y generar reportes del sistema.
         </p>
 
-        <div class="flex justify-center gap-4">
+        <div class="flex justify-center gap-6">
 
             <a href="{{ route('login') }}"
-                class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                class="px-10 py-4 bg-blue-600 text-white rounded-xl shadow-lg 
+                hover:bg-blue-700 hover:scale-105 transition duration-300">
+
                 Iniciar sesión
             </a>
 
             <a href="{{ route('register') }}"
-                class="px-6 py-3 border border-gray-400 rounded-lg hover:bg-gray-200 transition">
+                class="px-10 py-4 border-2 border-blue-600 text-blue-600 
+                rounded-xl hover:bg-blue-600 hover:text-white 
+                transition duration-300">
+
                 Registrarse
             </a>
 
         </div>
 
-    </main>
+    </div>
 
-    <!-- CARACTERÍSTICAS -->
-    <section class="max-w-5xl mt-16 grid md:grid-cols-3 gap-6 text-center">
+</main>
 
-        <div class="p-6 bg-white rounded-xl shadow">
+<section class="max-w-6xl mt-20 grid md:grid-cols-3 gap-8 text-center">
 
-            <h3 class="text-xl font-semibold mb-2">
-                Registro de Bitácoras
-            </h3>
+    <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition">
 
-            <p class="text-gray-500">
-                Permite registrar actividades realizadas en el laboratorio.
-            </p>
+        <h3 class="text-xl font-semibold mb-3">
+            Registro de Bitácoras
+        </h3>
 
-        </div>
+        <p class="text-gray-500">
+            Permite registrar actividades realizadas en el laboratorio.
+        </p>
 
-        <div class="p-6 bg-white rounded-xl shadow">
+    </div>
 
-            <h3 class="text-xl font-semibold mb-2">
-                Gestión de Usuarios
-            </h3>
+    <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition">
 
-            <p class="text-gray-500">
-                Administra los usuarios que utilizan el sistema.
-            </p>
+        <h3 class="text-xl font-semibold mb-3">
+             Gestión de Usuarios
+        </h3>
 
-        </div>
+        <p class="text-gray-500">
+            Administra los usuarios que utilizan el sistema.
+        </p>
 
-        <div class="p-6 bg-white rounded-xl shadow">
+    </div>
 
-            <h3 class="text-xl font-semibold mb-2">
-                Reportes
-            </h3>
+    <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition">
 
-            <p class="text-gray-500">
-                Consulta reportes y estadísticas del sistema.
-            </p>
+        <h3 class="text-xl font-semibold mb-3">
+            Reportes
+        </h3>
 
-        </div>
+        <p class="text-gray-500">
+            Consulta reportes y estadísticas del sistema.
+        </p>
 
-    </section>
+    </div>
+
+</section>
 
     <!-- FOOTER -->
     <footer class="mt-16 text-sm text-gray-500 text-center">
